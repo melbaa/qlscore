@@ -15,12 +15,12 @@ Quitters score as everyone else.
 """
 
 
-from urllib.request import urlopen
 import json
 import concurrent.futures
 import traceback
 import functools
 import operator
+import urllib.request
 
 from tkinter import *
 from tkinter import ttk
@@ -36,6 +36,10 @@ url_prefix = 'http://www.quakelive.com/stats/matchdetails/'
 NUM_WORKERS = 10  # how many requests to make at the same time
 TIMEOUT = 60  # seconds to wait before a request times out
 
+"""
+the urllib user agent seems to be banned, I guess they have their reasons.
+"""
+USER_AGENT = "Mozilla/5.0"
 
 def line_from_args(*args):
     """
@@ -48,7 +52,9 @@ def line_from_args(*args):
 
 
 def load_url(url, timeout):
-    conn = urlopen(url, timeout=timeout)
+    headers = {'User-Agent': USER_AGENT}
+    req = urllib.request.Request(url, headers=headers)
+    conn = urllib.request.urlopen(req, timeout=timeout)
     txt = conn.readall().decode('utf8')
     json_reply = json.loads(txt)
     return json_reply
