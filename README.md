@@ -4,7 +4,19 @@ Following the success of the recent FFA tournament and to encourage people to ru
 
 The calculator takes as input game ids for a round and shows the scores for each game and a total. The organizers use the total to decide who qualifies for the next round. To get the game ids, go to quake live website and navigate to the profile of one of the players. Clicking on his past games will show you the game id in the URL. 
 
-Ruleset info is in the file. 
+FFA1 ruleset:
+As seen on tourney organized by stitchyourass, muckyman, dsharp3.
+Winner gets 1600 points, everyone below gets 100 points less.
+People with equal frags get the same amount of points and it's up to the
+organizers to decide what to do.
+Players that lagged out/quit don't get any points, it's up to organizers to
+decide what to do.
+
+FFA2 ruleset:
+Winner gets 1600 points, people below get 100 points less.
+Ties are broken on game score, then frags, then damage done, then deaths.
+Quitters score as everyone else.
+
 
 How to install?
 Download python 3.2 or later and then run latest.py. No other dependencies.  

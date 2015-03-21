@@ -1,20 +1,3 @@
-"""
-FFA1 ruleset:
-As seen on tourney organized by stitchyourass, muckyman, dsharp3.
-Winner gets 1600 points, everyone below gets 100 points less.
-People with equal frags get the same amount of points and it's up to the
-organizers to decide what to do.
-Players that lagged out/quit don't get any points, it's up to organizers to
-decide what to do.
-
-FFA2 ruleset:
-Winner gets 1600 points, people below get 100 points less.
-Ties are broken on game score, then frags, then damage done, then deaths.
-Quitters score as everyone else.
-
-"""
-
-
 import json
 import concurrent.futures
 import traceback
