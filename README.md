@@ -23,7 +23,6 @@ Quitters score as everyone else.
 
 How to install?  
 Download python 3.2 or later and then run latest.py. No other dependencies.  
-Site - http://melbalabs.com/qlscore  
 on esr - http://esreality.com/post/2559144/quake-live-group-score-calculator/  
 
 Why not compile an executable?  
