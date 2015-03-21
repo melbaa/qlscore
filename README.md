@@ -23,7 +23,6 @@ Quitters score as everyone else.
 
 How to install?  
 Download python 3.2 or later and then run latest.py. No other dependencies.  
-on esr - http://esreality.com/post/2559144/quake-live-group-score-calculator/  
 
 Why not compile an executable?  
 Independently released software often gets flagged by web filters and anti virus software that people are using. I think this is pure abuse and blackmail. Posting the code like this avoids those problems and also nothing special has to be done for say linux. 
@@ -31,3 +30,4 @@ Independently released software often gets flagged by web filters and anti virus
 Why not a website?  
 I wanted to separate the availablity of the tool from the availability of my website, especially during a tourney. This way the tourney depends only on the quake live infrastructure, organizers and players. 
 
+also seen on esr - http://esreality.com/post/2559144/quake-live-group-score-calculator/  
